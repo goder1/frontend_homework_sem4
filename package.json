@@ -1,0 +1,25 @@
+{
+  "name": "BestGamesCatalog",
+  "version": "1.0.0",
+  "description": "Incredible website full of different games",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix --ignore-path .gitignore",
+    "format": "prettier --write . --ignore-path .gitignore",
+    "format:check": "prettier --check . --ignore-path .gitignore",
+    "code:fix": "npm run lint:fix && npm run format",
+    "validate": "npm run lint && npm run format:check"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.0",
+    "prettier": "^3.1.1",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0"
+  },
+  "keywords": [],
+  "author": "Daniil",
+  "license": "ISC"
+}
